@@ -26,5 +26,5 @@ variable "compute_gallery" {
 variable "enable_community_gallery" {
   description = "Enable the Community Gallery."
   type        = bool
-  default     = false  
+  default     = false
 }

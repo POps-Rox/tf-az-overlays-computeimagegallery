@@ -15,7 +15,7 @@ resource "azurerm_shared_image_gallery" "compute_image_gallery" {
   dynamic "sharing" {
     for_each = var.compute_gallery[*]
     content {
-      permission = sharing.value.permission    
+      permission = sharing.value.permission
     }
   }
 
@@ -34,5 +34,5 @@ resource "azurerm_shared_image_gallery" "compute_image_gallery" {
   }
 
   tags = merge(local.default_tags, var.add_tags)
-} 
+}
 
