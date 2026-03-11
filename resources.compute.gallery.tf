@@ -20,7 +20,7 @@ resource "azurerm_shared_image_gallery" "compute_image_gallery" {
   }
 
   dynamic "sharing" {
-    for_each = enable_community_gallery ? [var.compute_gallery[*]] : []
+    for_each = var.enable_community_gallery ? [var.compute_gallery[*]] : []
     content {
       permission = "Community"
 
