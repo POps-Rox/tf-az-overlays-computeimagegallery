@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 module "mod_compute_image_gallery" {
-  #source  = "azurenoops/overlays-compute-image-gallery/azurerm"
+  #source  = "github.com/POps-Rox/tf-az-overlays-computeimagegallery"
   #version = "x.x.x"
   source = "../../.."
 
