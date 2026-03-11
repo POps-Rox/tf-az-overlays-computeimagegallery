@@ -25,7 +25,7 @@ provider "azurerm" {
 }
 
 module "overlays-shared-image-gallery" {
-  source  = "azurenoops/overlays-shared-image-gallery/azurerm"
+  source  = "POps-Rox/tf-az-overlays-shared-image-gallery/azurerm"
   version = "x.x.x"
   
   location = "usgovvirginia"
@@ -101,7 +101,7 @@ provider "azurerm" {
 }
 
 module "overlays-compute-image-gallery" {
-  source  = "azurenoops/overlays-compute-image-gallery/azurerm"
+  source  = "POps-Rox/tf-az-overlays-compute-image-gallery/azurerm"
   version = "x.x.x"
   
   create_gallery_resource_group = true
